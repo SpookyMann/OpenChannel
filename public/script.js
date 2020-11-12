@@ -32,7 +32,6 @@ window.onload = function() {
   elemShows = document.getElementById("shows");
   elemSchedule = document.getElementById("schedule");
   homePage();
-  pushData();
 }; // window.onload
 
 //api urls
@@ -222,7 +221,7 @@ function fetchSchedule() {
 //random tv shows on home page when first loaded
 function fetchRandShows() {
   fetch(
-    "https://api.tvmaze.com/shows?page=" + Math.floor(Math.random() * 206 + 1)
+    "https://api.tvmaze.com/shows?page=" + 1
   )
     .then(response => response.json())
     .then(data => loadRandShows(data));
@@ -493,6 +492,7 @@ function createSchedule(tvshowJSON) {
 
 // construct random tv shows for homepage
 function createRandShows(tvshowJSON) {
+  console.log("function loaded")
   if (loaded < 5) {
 
     var elemDiv = document.createElement("div");
