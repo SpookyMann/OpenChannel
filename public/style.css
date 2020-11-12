@@ -1,0 +1,541 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #222;
+  margin: 0;
+  color: #FFF;
+}
+
+p {
+  color: #FFF;
+  width: 700px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+
+h3 {
+  font-style: italic;
+  padding: 2px;
+  color: #995400;
+  border: 2px solid #FF8C00;
+  border-radius: 7px;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #E3E3E3;
+}
+
+h4 {
+  font-style: italic;
+  color: #FFF;
+}
+
+img {
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #22222220;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F09233BB;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFFFFFBB;
+}
+
+#home {
+  padding: 5px;
+}
+
+#back {
+  cursor: pointer;
+  border-radius: 7px;
+  border: 1px solid red;
+  width: 100px;
+}
+
+li.episodesList {
+  font-style: italic;
+  color: #FFF;
+  width: inherit;
+  border: 1px solid #FF8C00;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  list-style-type: none;
+  padding: 5px;
+  text-align: center;
+}
+
+li.genreListItem {
+  font-style: italic;
+  color: #FFF;
+  border: 3px solid #FF8C00;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  list-style-type: none;
+  padding: 3px;
+  width: 100px;
+}
+
+ol {
+  list-style-type: none;
+  margin: 3px;
+  padding: 0;
+  overflow: scroll;
+  height: auto;
+  width: auto;
+}
+
+ul.genreList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#schedule {
+  font-size: 15px;
+  height: 190px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#schedule div {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  width: 300px;
+  margin-right: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #FF8C00;
+}
+
+#schedule h2{
+  color: #3D3D3D;
+}
+
+#schedule h3 {
+  border-color: #FFF;
+  color: #995400;
+  background-color: #E3E3E3;
+}
+
+#shows {
+  font-size: 15px;
+  height: auto;
+  overflow: scroll;
+  white-space: nowrap;
+  margin: 5px;
+}
+
+#shows div {
+  display: inline-block;
+  border: solid #FFF 3px;
+  padding: 14px;
+  width: 300px;
+  margin: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 3vw;
+  background-color: #BB5B02;
+}
+
+#results {
+  display: block;
+  height: 450px;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+
+#show {
+  display: block;
+  height: 300px;
+  text-overflow: ellipsis;
+}
+
+#show p {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+}
+
+#index {
+  margin: 8px;
+  padding: 3px;
+}
+
+#library {
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+#library img {
+  width: 100px;
+  height: 150px;
+}
+
+#pageSelect {
+  display: inline-block;
+  width: 100%;
+}
+
+#next {
+  float: right;
+  text-decoration: none;
+  color: #FFF;
+  border: 3px solid #FF8C00;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#previous {
+  float: left;
+  text-decoration: none;
+  color: #FFF;
+  border: 3px solid #FF8C00;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#header {
+  background: #000;
+  text-align: center;
+  overflow: hidden;
+}
+
+#header h1 {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #FFF;
+}
+
+#header .search-container {
+  float: right;
+  margin: 5px;
+}
+
+#header input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 0;
+  font-size: 17px;
+  border: none;
+}
+
+#header .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-left: 0;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+#search-but {
+  margin-top: 0;
+  margin-bottom: -2px;
+  width: 15px;
+}
+
+#search-button {
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  background: #F09233;
+  color: #3D3D3D;
+  font-family: sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+}
+
+#search-button:hover,
+#search-button:focus {
+  background: #ffffff;
+  color: #F09233;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  padding: 14px 16px;
+  background-color: #000;
+  font-family: inherit;
+  margin: 5px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #F09233;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  float: none;
+  color: #FFF;
+  background-color: #111;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: none;
+  width: 120px;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #40b68f;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.unhidden {
+  display: block;
+}
+
+#lightbox {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+#infobox {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 100%;
+  background-color: #000;
+}
+
+#infobox p {
+  width: auto;
+}
+
+#infobox .genreListItem {
+  float: left;
+}
+
+#sortBox {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.castings {
+  font-size: 15px;
+  height: 300px;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 5px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.castings::-webkit-scrollbar {
+  display: none;
+}
+
+.castList {
+  display: inline-block;
+  border: solid #F09233 1px;
+  padding: 14px;
+  width: 300px;
+  margin: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.castList img {
+  width: 105px;
+  height: 147px;
+}
+
+#nullImage {
+  width: 208px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 10px;
+  height: 293px;
+  border: solid #FF8C00 1px;
+  text-align: center;
+}
+
+#Episodes {
+  height: 50px;
+  width: 50px;
+  color: #FFF;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #FFFFFF00;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #FFF;
+}
+
+.collapsible hr {
+  background-color: #FF8C00;
+}
+
+.active,
+.collapsible:hover {
+  color: #FF8C00;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+#tvIndex {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  padding: 14px 16px;
+  background-color: #000;
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+}
+
+#tvIndex:hover {
+  background-color: #F09233;
+}
+
+@media only screen and (max-width: 710px) {
+  #header .search-container {
+    float: none;
+    margin: 0;
+  }
+  #header input[type="text"],
+  #header .search-container button {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  #header input[type="text"] {
+    border: 1px solid #ccc;
+  }
+
+  #search-button {
+    margin: 0;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 536px) {
+  #shows div {
+    font-size: 10px;
+  }
+
+  #library {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (min-width: 531px) {
+  #library {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #sortBox {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #shows {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    font-size: 15px;
+    height: auto;
+    white-space: nowrap;
+    margin: 5px;
+  }
+
+  #shows div {
+    border: solid #F09233 1px;
+    padding: 14px;
+    margin: 5px;
+    white-space: nowrap;
+  }
+
+  #library {
+    grid-template-columns: auto auto auto auto auto;
+  }
+}

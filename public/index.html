@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://api.tvmaze.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Televison Library and Info" />
+    <meta name="theme-color" content="#222222" />
+    <title>Open Channel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <script src="script.js" async></script>
+    <script src="addserviceworker.js" async></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script
+      src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"
+      async
+    ></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script
+      src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"
+      async
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1 onclick="homePage()">Open Channel</h1>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <strong>Genres</strong>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <button onclick="loadGenre('Action')" class="Genre">
+            Action
+          </button>
+          <button onclick="loadGenre('Comedy')" class="Genre">
+            Comedy
+          </button>
+          <button onclick="loadGenre('Drama')" class="Genre">
+            Drama
+          </button>
+          <button onclick="loadGenre('Family')" class="Genre">
+            Family
+          </button>
+          <button onclick="loadGenre('Mystery')" class="Genre">
+            Mystery
+          </button>
+          <button onclick="loadGenre('Romance')" class="Genre">
+            Romance
+          </button>
+          <button onclick="loadGenre('Crime')" class="Genre">
+            Crime
+          </button>
+          <button onclick="loadGenre('Anime')" class="Genre">
+            Anime
+          </button>
+          <button onclick="loadGenre('Thriller')" class="Genre">
+            Thriller
+          </button>
+          <button onclick="loadGenre('Mystery')" class="Genre">
+            Mystery
+          </button>
+          <button onclick="loadGenre('Science-Fiction')" class="Genre">
+            Science-Fiction
+          </button>
+          <button onclick="loadGenre('Horror')" class="Genre">
+            Horror
+          </button>
+        </div>
+      </div>
+      <button id="tvIndex" onclick="showLibrary()">
+        Shows
+      </button>
+
+      <div id="test"></div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          aria-label="text-input"
+          placeholder="Search.."
+        />
+
+        <button
+          id="search-button"
+          aria-label="search-button"
+          onclick="searchfunction()"
+        >
+          search
+        </button>
+      </div>
+    </div>
+
+    <div id="pageContent" class="unhidden">
+      <div id="main" class="hidden">
+        <h2>
+          Shows
+        </h2>
+        <div id="showResults"></div>
+        <h2>
+          Actors
+        </h2>
+        <div id="actorResults"></div>
+      </div>
+
+      <div id="home" class="unhidden">
+        <h1>
+          Open Channel Library
+        </h1>
+        <hr />
+        <div id="shows"></div>
+        <h4 onclick="showLibrary()">
+          More Shows &#8811;
+        </h4>
+
+        <h1>
+          Schedule
+        </h1>
+        <hr />
+        <div id="schedule" class="schedule"></div>
+      </div>
+
+      <div id="index" class="hidden">
+        <div id="pageSelect">
+          <a href="#" id="previous" class="hidden" onclick="previous()"
+            >&laquo; Previous</a
+          >
+          <a href="#" id="next" class="unhidden" onclick="next()"
+            >Next &raquo;</a
+          >
+        </div>
+        <hr />
+        <div id="library"></div>
+      </div>
+    </div>
+
+    <div id="lightbox" class="hidden">
+      <button id="back" onclick="exitInfo()">
+        Back
+      </button>
+    </div>
+    <div id="infobox" class="hidden"></div>
+
+    <br /><br />
+  </body>
+</html>
